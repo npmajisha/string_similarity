@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
 
 public class JaroWinklerSimilarity extends SimilarityImplementation implements SimilarityAlgorithm {
 
-	public AbstractStringMetric metric = new Jaro();
+	public AbstractStringMetric metric = new JaroWinkler();
 	
 
 	@Override

@@ -19,9 +19,9 @@ public class Similarity {
 		// algorithm = similarityFactory.getAlgorithm("SMITHWATERMAN");
 		// algorithm.getSimilar(sourceFile1, sourceFile2, output,null);
 
-		// algorithm = similarityFactory.getAlgorithm("JAROWINKLER");
-		// similarityMap = algorithm.getSimilar(sourceFile1, sourceFile2,
-		// output, null);
+//		 algorithm = similarityFactory.getAlgorithm("JAROWINKLER");
+//		 algorithm.getSimilar(sourceFile1, sourceFile2,
+//		 output, null);
 
 		 algorithm = similarityFactory.getAlgorithm("JACCARD");
 		 algorithm.getSimilar(sourceFile1, sourceFile2, output, null);

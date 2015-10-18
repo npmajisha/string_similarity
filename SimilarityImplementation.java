@@ -30,7 +30,7 @@ public abstract class SimilarityImplementation {
 				}
 			}
 			if (maxSimilarityScore >= getThreshold() && filterId(filterSet, i + 1)) {
-
+//
 //				 System.out.println((i + 1) + ":" + sourceRecords1.get(i) +
 //				 "--->" + (similarEntry + 1) + ":"
 //				 + sourceRecords2.get(similarEntry) + "--->" +

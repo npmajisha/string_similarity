@@ -24,11 +24,11 @@ public class MyJaccardSimilarity extends SimilarityImplementation implements Sim
 				if (new Soundex().getSimilarity(sourceRecords1.get(id - 1),
 						sourceRecords2.get(map.get(id) - 1)) >= 0.83) {
 
-					// System.out.println(id + ":" + sourceRecords1.get(id - 1)
-					// + "-->" + map.get(id) + ":"
-					// + sourceRecords2.get(map.get(id) - 1) + new Soundex()
-					// .getSimilarity(sourceRecords1.get(id - 1),
-					// sourceRecords2.get(map.get(id) - 1)));
+//					 System.out.println(id + ":" + sourceRecords1.get(id - 1)
+//					 + "-->" + map.get(id) + ":"
+//					 + sourceRecords2.get(map.get(id) - 1) + new Soundex()
+//					 .getSimilarity(sourceRecords1.get(id - 1),
+//					 sourceRecords2.get(map.get(id) - 1)));
 
 					filteredMap.put(id, map.get(id));
 				}
