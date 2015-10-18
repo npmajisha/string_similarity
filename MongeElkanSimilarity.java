@@ -4,11 +4,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 
-public class SmithWatermanSimilarity extends SimilarityImplementation implements SimilarityAlgorithm {
-
-	public AbstractStringMetric metric = new SmithWaterman();
+public class MongeElkanSimilarity extends SimilarityImplementation implements SimilarityAlgorithm {
+	public AbstractStringMetric metric = new MongeElkan();
 
 	@Override
 	public HashMap<Integer, Integer> getSimilar(String source1, String source2, String output,

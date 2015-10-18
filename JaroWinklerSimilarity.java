@@ -4,11 +4,12 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
 
-public class SmithWatermanSimilarity extends SimilarityImplementation implements SimilarityAlgorithm {
+public class JaroWinklerSimilarity extends SimilarityImplementation implements SimilarityAlgorithm {
 
-	public AbstractStringMetric metric = new SmithWaterman();
+	public AbstractStringMetric metric = new Jaro();
+	
 
 	@Override
 	public HashMap<Integer, Integer> getSimilar(String source1, String source2, String output,
@@ -25,8 +26,9 @@ public class SmithWatermanSimilarity extends SimilarityImplementation implements
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return map;
 
+		return map;
+		
 	}
 
 	@Override
@@ -36,7 +38,8 @@ public class SmithWatermanSimilarity extends SimilarityImplementation implements
 
 	@Override
 	public float getThreshold() {
-		return 0;
+		float threshold = (float) 0.78;
+		return threshold;
 	}
 
 }
